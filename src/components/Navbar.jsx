@@ -1,7 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
+    const location = useLocation();
+    const isDashboard = location.pathname === '/dashboard';
+    const logoHeight = isDashboard ? 'calc(5vh - 2px)' : 'calc(10vh - 2px)';
+
     return (
         <>
             {/* Top Bar */}
@@ -23,7 +27,7 @@ const Navbar = () => {
                 <div className="w-full px-6 flex justify-between items-center">
                     {/* Logo Section */}
                     <Link to="/" className="flex items-center gap-2 text-decoration-none">
-                        <div style={{ height: '10vh', width: 'auto', aspectRatio: '16/9' }} className="overflow-hidden flex items-center justify-center">
+                        <div style={{ height: logoHeight, width: 'auto', aspectRatio: '16/9' }} className="overflow-hidden flex items-center justify-center transition-all duration-300">
                             <img
                                 src="/travelabroad.png"
                                 alt="Aspire Abroad Logo"
