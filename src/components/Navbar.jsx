@@ -4,7 +4,7 @@ import { Link, useLocation } from 'react-router-dom';
 const Navbar = () => {
     const location = useLocation();
     const isDashboard = location.pathname === '/dashboard';
-    const logoHeight = isDashboard ? 'calc(5vh - 2px)' : 'calc(10vh - 2px)';
+    const logoHeight = isDashboard ? 'calc(5vh - 6px)' : 'calc(10vh - 6px)';
 
     return (
         <>
