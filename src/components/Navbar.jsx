@@ -23,15 +23,7 @@ const Navbar = () => {
                 <div className="container flex justify-between items-center">
                     {/* Logo Section */}
                     <Link to="/" className="flex items-center gap-2 text-decoration-none">
-                        <div className="text-center">
-                            <div className="text-primary font-bold text-xl leading-tight">
-                                <i className="fas fa-plane-departure text-3xl mr-2"></i>
-                                ASPIRE ABROAD
-                            </div>
-                            <div className="text-xs font-bold tracking-wider border-t border-black mt-1 pt-1 text-secondary">
-                                OFFICIAL REPRESENTATIVE OF FEFU
-                            </div>
-                        </div>
+                        <img src="/travelabroad.png" alt="Aspire Abroad Logo" className="h-16 w-auto" />
                     </Link>
 
                     {/* Navigation Links */}
