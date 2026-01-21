@@ -4,7 +4,7 @@ import { Link, useLocation } from 'react-router-dom';
 const Navbar = () => {
     const location = useLocation();
     const isDashboard = location.pathname === '/dashboard';
-    const logoHeight = isDashboard ? 'calc(5vh - 6px)' : 'calc(10vh - 6px)';
+    const logoHeight = isDashboard ? '40px' : '60px';
 
     return (
         <>
@@ -27,11 +27,11 @@ const Navbar = () => {
                 <div className="w-full px-6 flex justify-between items-center">
                     {/* Logo Section */}
                     <Link to="/" className="flex items-center gap-2 text-decoration-none">
-                        <div style={{ height: logoHeight, width: 'auto', aspectRatio: '16/9' }} className="overflow-hidden flex items-center justify-center transition-all duration-300">
+                        <div style={{ height: logoHeight, width: '120px' }} className="overflow-hidden flex items-center justify-center">
                             <img
-                                src="/travelabroad.png"
+                                src="/travelabroad.png?v=2"
                                 alt="Aspire Abroad Logo"
-                                className="w-full h-full object-cover object-center transform scale-125"
+                                style={{ height: '100%', width: '100%', objectFit: 'contain' }}
                             />
                         </div>
                         <span className="text-primary font-bold text-xl tracking-wide">ASPIRE ABROAD</span>
