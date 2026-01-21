@@ -7,6 +7,14 @@
     <title>temp_app</title>
   </head>
   <body>
+    <script>
+      window.onerror = function(message, source, lineno, colno, error) {
+        document.body.innerHTML = '<div style="color:red; padding:20px; font-family:sans-serif;"><h1>Application Error</h1><p><strong>Message:</strong> ' + message + '</p><p><strong>Source:</strong> ' + source + ':' + lineno + '</p><pre>' + (error ? error.stack : '') + '</pre></div>';
+      };
+      window.onunhandledrejection = function(event) {
+        document.body.innerHTML = '<div style="color:red; padding:20px; font-family:sans-serif;"><h1>Unhandled Promise Rejection</h1><p><strong>Reason:</strong> ' + event.reason + '</p></div>';
+      };
+    </script>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
