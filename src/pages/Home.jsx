@@ -100,44 +100,44 @@ const Home = () => {
             <Navbar />
 
             {/* Hero Section */}
-            <motion.section 
+            <motion.section
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1 }}
-                className="hero-section bg-gray-500 flex items-center justify-center text-center text-white relative" 
-                style={{ backgroundColor: '#808080', minHeight: '600px' }}
+                className="hero-section bg-gray-500 flex items-center justify-center text-center text-white relative"
+                style={{ backgroundColor: '#808080', minHeight: '100vh' }}
             >
-                <div className="container px-4">
-                    <motion.h2 
+                <div className="container px-4 py-20 md:py-0">
+                    <motion.h2
                         initial={{ y: -20, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ delay: 0.2, duration: 0.8 }}
-                        className="text-xl mb-2 uppercase tracking-wide"
+                        className="text-lg md:text-xl mb-2 uppercase tracking-wide"
                     >
                         Aspire Abroad
                     </motion.h2>
-                    <motion.h1 
+                    <motion.h1
                         initial={{ scale: 0.8, opacity: 0 }}
                         animate={{ scale: 1, opacity: 1 }}
                         transition={{ delay: 0.4, duration: 0.8 }}
-                        className="text-6xl font-bold mb-8 uppercase" 
+                        className="text-4xl md:text-6xl font-bold mb-8 uppercase leading-tight md:leading-normal"
                         style={{ maxWidth: '900px', margin: '0 auto' }}
                     >
                         Official <br /> Representative of <br /> FEFU
                     </motion.h1>
 
-                    <motion.a 
+                    <motion.a
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
-                        href="/register" 
-                        className="btn btn-primary text-lg px-8 py-3 uppercase inline-block"
+                        href="/register"
+                        className="btn btn-primary text-base md:text-lg px-6 py-2 md:px-8 md:py-3 uppercase inline-block"
                     >
                         Register Now
                     </motion.a>
                 </div>
 
                 {/* Whatsapp Float Icon */}
-                <motion.div 
+                <motion.div
                     initial={{ x: 100, opacity: 0 }}
                     animate={{ x: 0, opacity: 1 }}
                     transition={{ delay: 1, type: 'spring' }}
@@ -149,30 +149,12 @@ const Home = () => {
                 </motion.div>
             </motion.section>
 
-            {/* About Section */}
-            <motion.section 
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.3 }}
-                variants={fadeInUp}
-                id="about" 
-                className="py-16 bg-white"
-            >
-                <div className="container px-4">
-                    <div className="text-center mb-12">
-                        <h2 className="text-4xl font-bold text-primary mb-4">Far Eastern Federal University</h2>
-                        <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-                            We are the official representative of Far Eastern Federal University (FEFU), one of the leading medical universities in Russia.
-                            FEFU has granted us the power of attorney to facilitate direct admissions, meaning you can apply without the need for any third-party agency or agent.
-                        </p>
-                    </div>
-                </div>
-            </motion.section>
+
 
             {/* Services Section */}
             <section id="services" className="py-16 bg-light-gray">
                 <div className="container px-4">
-                    <motion.div 
+                    <motion.div
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true }}
@@ -183,7 +165,7 @@ const Home = () => {
                         <p className="text-gray-600">Comprehensive support for your journey to studying MBBS abroad</p>
                     </motion.div>
 
-                    <motion.div 
+                    <motion.div
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true, amount: 0.1 }}
@@ -206,7 +188,7 @@ const Home = () => {
             {/* Why Choose Us Section */}
             <section className="py-16 bg-white">
                 <div className="container px-4">
-                    <motion.div 
+                    <motion.div
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true }}
@@ -216,7 +198,7 @@ const Home = () => {
                         <h2 className="text-4xl font-bold text-primary mb-4">Name That You Trust</h2>
                     </motion.div>
 
-                    <motion.div 
+                    <motion.div
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true }}
@@ -259,7 +241,7 @@ const Home = () => {
             {/* Testimonials Section */}
             <section className="py-16 bg-light-gray">
                 <div className="container px-4">
-                    <motion.div 
+                    <motion.div
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true }}
@@ -268,7 +250,7 @@ const Home = () => {
                     >
                         <h2 className="text-4xl font-bold text-primary mb-4">What Our Students Say</h2>
                         <p className="text-gray-600">Hear from students who trusted us with their dreams</p>
-                        
+
                         <motion.button
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
@@ -281,7 +263,7 @@ const Home = () => {
 
                     {/* Review Form */}
                     {showReviewForm && (
-                        <motion.div 
+                        <motion.div
                             initial={{ height: 0, opacity: 0 }}
                             animate={{ height: 'auto', opacity: 1 }}
                             exit={{ height: 0, opacity: 0 }}
@@ -291,7 +273,7 @@ const Home = () => {
                         </motion.div>
                     )}
 
-                    <motion.div 
+                    <motion.div
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true }}
@@ -322,7 +304,7 @@ const Home = () => {
             {/* Video Gallery Section */}
             <section className="py-16 bg-white">
                 <div className="container px-4">
-                    <motion.div 
+                    <motion.div
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true }}
@@ -333,7 +315,7 @@ const Home = () => {
                         <p className="text-gray-600">Watch our students' journey to success</p>
                     </motion.div>
 
-                    <motion.div 
+                    <motion.div
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true }}
@@ -341,11 +323,11 @@ const Home = () => {
                         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
                     >
                         {[1, 2, 3].map((item) => (
-                            <motion.div 
-                                key={item} 
+                            <motion.div
+                                key={item}
                                 variants={fadeInUp}
                                 whileHover={{ scale: 1.02 }}
-                                className="bg-gray-200 rounded-lg flex items-center justify-center cursor-pointer hover:shadow-xl transition-all" 
+                                className="bg-gray-200 rounded-lg flex items-center justify-center cursor-pointer hover:shadow-xl transition-all"
                                 style={{ height: '250px' }}
                             >
                                 <div className="text-center text-gray-500">
@@ -359,7 +341,7 @@ const Home = () => {
             </section>
 
             {/* Subscribe/Contact Section */}
-            <motion.section 
+            <motion.section
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
@@ -369,10 +351,10 @@ const Home = () => {
                 <div className="container px-4 text-center">
                     <h2 className="text-3xl font-bold mb-4">Ready to Start Your Journey?</h2>
                     <p className="text-lg mb-8">Contact us today to begin your MBBS abroad application process</p>
-                    <motion.a 
+                    <motion.a
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}
-                        href="/register" 
+                        href="/register"
                         className="btn bg-white text-primary px-8 py-3 text-lg font-bold hover:bg-gray-100 inline-block rounded-full shadow-lg"
                     >
                         Get Started Now
