@@ -19,15 +19,15 @@ const Navbar = () => {
             </div>
 
             {/* Main Navbar */}
-            <header className="bg-white py-1 shadow-sm sticky top-0 z-50">
+            <header className="bg-white py-2 shadow-sm sticky top-0 z-50">
                 <div className="container flex justify-between items-center">
                     {/* Logo Section */}
                     <Link to="/" className="flex items-center gap-2 text-decoration-none">
-                        <div className="h-4 w-5 overflow-hidden flex items-center justify-center">
+                        <div style={{ height: '8vh', width: 'auto', aspectRatio: '16/9' }} className="overflow-hidden flex items-center justify-center">
                             <img
                                 src="/travelabroad.png"
                                 alt="Aspire Abroad Logo"
-                                className="w-full h-full object-cover object-center transform scale-150"
+                                className="w-full h-full object-cover object-center transform scale-125"
                             />
                         </div>
                     </Link>
