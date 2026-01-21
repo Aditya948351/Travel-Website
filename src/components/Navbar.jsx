@@ -20,7 +20,7 @@ const Navbar = () => {
 
             {/* Main Navbar */}
             <header className="bg-white py-2 shadow-sm sticky top-0 z-50">
-                <div className="container flex justify-between items-center">
+                <div className="w-full px-6 flex justify-between items-center">
                     {/* Logo Section */}
                     <Link to="/" className="flex items-center gap-2 text-decoration-none">
                         <div style={{ height: '8vh', width: 'auto', aspectRatio: '16/9' }} className="overflow-hidden flex items-center justify-center">
@@ -30,6 +30,7 @@ const Navbar = () => {
                                 className="w-full h-full object-cover object-center transform scale-125"
                             />
                         </div>
+                        <span className="text-primary font-bold text-xl tracking-wide">ASPIRE ABROAD</span>
                     </Link>
 
                     {/* Navigation Links */}
